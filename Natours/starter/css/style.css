@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -25,6 +26,26 @@
   100% {
     opacity: 1;
     transform: translate(0); } }
+=======
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+using BEM: block__element--modifier naming format
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+>>>>>>> 024db235bee95b788da6c4edec7bcfecfa9964b1
 
 body {
   font-family: "Lato", sans-serif;
@@ -32,7 +53,32 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
+<<<<<<< HEAD
   padding: 3rem; }
+=======
+  padding: 3rem;
+  box-sizing: border-box; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+>>>>>>> 024db235bee95b788da6c4edec7bcfecfa9964b1
 
 .heading-primary {
   color: #fff;
@@ -54,6 +100,7 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
+<<<<<<< HEAD
 *,
 *::after,
 *::before {
@@ -66,6 +113,35 @@ html {
 
 body {
   box-sizing: border-box; }
+=======
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+>>>>>>> 024db235bee95b788da6c4edec7bcfecfa9964b1
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -109,6 +185,7 @@ body {
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+<<<<<<< HEAD
 
 .header {
   height: 95vh;
@@ -129,3 +206,5 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+=======
+>>>>>>> 024db235bee95b788da6c4edec7bcfecfa9964b1
